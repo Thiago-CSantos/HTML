@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>contador</title>
+</head>
+<body style="background-color: grey;">
+    
+    <button style="padding: 40px;">clique1 soma</button>
+
+    <button style="padding: 40px;">clique2 subtrai</button>
+
+    <section id="pp">
+        <p>o contador esta com </p>
+    </section>
+
+<script>
+    var cont1 = 0, cont2=0, result;
+    document.writeln('<h1> contador de cliques </h1>');
+
+    function clique1(){
+        cont1 = cont1 + 1;
+        result = document.getElementById('pp').innerHTML ='contador esta com: '+cont1;
+    }
+
+    
+    
+</script>
+</body>
+</html>

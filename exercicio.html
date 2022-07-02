@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio JS</title>
+</head>
+<body>
+    
+
+
+<script>
+    var n1, n2, result, al, nome;
+
+    al = document.body.style.backgroundColor='green';
+    
+    n1 = Number(window.prompt('digite um numero: '));
+    n2 = Number(window.prompt('digite um numero: '));
+
+    var opera = window.prompt('escolha uma forma de operação: (+ - * /)');
+    if(opera == '+'){
+        result = n1 + n2;
+    }
+
+    else if(opera == '-'){
+        result = n1 - n2;
+    }
+
+    else if(opera == '/'){
+        result = n1 / n2;
+        result.toFixed(5);
+    }
+    
+    else if(opera == '*'){
+        result = n1 * n2;
+    }
+
+    
+    window.alert(`a soma dos dois numero ${n1} ${opera} ${n2} é:  ` +result);
+
+    nome = window.prompt('Qual o seu nome: ');
+    document.write(`Seu nome tem ${nome.length} <br>`);
+    document.write(`Olá, ${nome}, em maúsculo fica ${nome.toUpperCase()}`);
+</script>
+
+</body>
+</html>
